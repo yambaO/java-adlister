@@ -17,4 +17,5 @@ public class PickColorServlet extends HttpServlet {
       String color =  req.getParameter("color");
       resp.sendRedirect("/viewcolor?color=" + color);
     }
+
 }
