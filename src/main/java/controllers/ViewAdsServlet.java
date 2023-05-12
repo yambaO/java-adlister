@@ -19,7 +19,7 @@ public class ViewAdsServlet extends HttpServlet {
      Ads adsDao = DaoFactory.getAdsDao();
      List<Ad> ads = adsDao.all();
      req.setAttribute("ads", ads);
-     req.getRequestDispatcher("/index.jsp");
+     req.getRequestDispatcher("/ads/index.jsp").forward(req,resp);
     }
 
 }

@@ -5,13 +5,12 @@
     <title>View ads</title>
 </head>
 <body>
-<h1>Here are all the products:</h1>
 
-<c:forEach var="ads" items="${ads}">
-    <div class="ads">
-        <p>${ads.id}</p>
-        <p>name: $ ${ads.userId}</p>
-        <p> n: $ ${ads.userId}</p
+<h1>Here are all the ads:</h1>
+<c:forEach var="ad" items="${ads}">
+    <div class="ad">
+        <h3>title: ${ad.title}</h3>
+        <p>description:${ad.description}</p>
     </div>
 </c:forEach>
 
